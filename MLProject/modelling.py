@@ -34,3 +34,8 @@ with mlflow.start_run():
 
     print(f"Train accuracy: {train_accuracy}")
     print(f"Test accuracy: {test_accuracy}")
+
+    #Simpan run ID biar bisa dipakai step Docker build di workflow CI
+    run_id = mlflow.active_run().info.run_id
+    with open("run_id.txt", "w") as f:
+        f.write(run_id)
