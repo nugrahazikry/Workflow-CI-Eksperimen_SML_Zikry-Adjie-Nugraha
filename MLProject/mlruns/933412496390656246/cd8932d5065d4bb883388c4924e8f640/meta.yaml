@@ -1,0 +1,15 @@
+artifact_uri: file:///home/runner/work/Workflow-CI-Eksperimen_SML_Zikry-Adjie-Nugraha/Workflow-CI-Eksperimen_SML_Zikry-Adjie-Nugraha/MLProject/mlruns/933412496390656246/cd8932d5065d4bb883388c4924e8f640/artifacts
+end_time: 1783583892598
+entry_point_name: ''
+experiment_id: '933412496390656246'
+lifecycle_stage: active
+run_id: cd8932d5065d4bb883388c4924e8f640
+run_name: treasured-wren-681
+run_uuid: cd8932d5065d4bb883388c4924e8f640
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783583846130
+status: 3
+tags: []
+user_id: runner
