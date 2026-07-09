@@ -35,4 +35,5 @@ jobs:
       - name: Run MLflow Project
         shell: bash -l {0}
         working-directory: MLProject
-        run: mlflow run . --env-manager=conda
+        run: mlflow run . --env-manager=conda --experiment-name "Telco Customer Churn - Workflow CI"
+

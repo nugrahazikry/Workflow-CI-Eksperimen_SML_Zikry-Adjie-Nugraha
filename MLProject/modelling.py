@@ -10,9 +10,6 @@ import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 
-#Set experiment name
-mlflow.set_experiment("Telco Customer Churn - Workflow CI")
-
 #Enable autolog
 mlflow.sklearn.autolog()
 
