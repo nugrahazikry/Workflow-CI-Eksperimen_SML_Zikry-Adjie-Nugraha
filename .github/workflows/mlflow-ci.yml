@@ -37,3 +37,18 @@ jobs:
         working-directory: MLProject
         run: mlflow run . --env-manager=conda --experiment-name "Telco Customer Churn - Workflow CI"
 
+
+      - name: Run MLflow Project
+        shell: bash -l {0}
+        working-directory: MLProject
+        run: mlflow run . --env-manager=conda --experiment-name "Telco Customer Churn - Workflow CI"
+
+      - name: Commit and push training artifacts
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add MLProject/mlruns/
+          git diff --staged --quiet || git commit -m "chore: save CI training artifacts [skip ci]"
+          git pull --rebase origin main
+          git push
+

@@ -7,10 +7,6 @@
 __pycache__/
 *.pyc
 
-# MLflow local tracking artifacts
-mlruns/
-mlartifacts/
-
 # OS
 .DS_Store
 Thumbs.db
