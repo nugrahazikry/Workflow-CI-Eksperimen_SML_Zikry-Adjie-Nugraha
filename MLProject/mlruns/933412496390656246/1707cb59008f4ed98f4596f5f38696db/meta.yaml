@@ -1,0 +1,15 @@
+artifact_uri: file:///home/runner/work/Workflow-CI-Eksperimen_SML_Zikry-Adjie-Nugraha/Workflow-CI-Eksperimen_SML_Zikry-Adjie-Nugraha/MLProject/mlruns/933412496390656246/1707cb59008f4ed98f4596f5f38696db/artifacts
+end_time: 1783585524405
+entry_point_name: ''
+experiment_id: '933412496390656246'
+lifecycle_stage: active
+run_id: 1707cb59008f4ed98f4596f5f38696db
+run_name: nosy-hen-751
+run_uuid: 1707cb59008f4ed98f4596f5f38696db
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783585475952
+status: 3
+tags: []
+user_id: runner
