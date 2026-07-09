@@ -1,0 +1,15 @@
+artifact_uri: file:///home/runner/work/Workflow-CI-Eksperimen_SML_Zikry-Adjie-Nugraha/Workflow-CI-Eksperimen_SML_Zikry-Adjie-Nugraha/MLProject/mlruns/933412496390656246/fa10b3862af54668a99a846b02b5156c/artifacts
+end_time: 1783584715624
+entry_point_name: ''
+experiment_id: '933412496390656246'
+lifecycle_stage: active
+run_id: fa10b3862af54668a99a846b02b5156c
+run_name: sincere-cub-591
+run_uuid: fa10b3862af54668a99a846b02b5156c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783584669021
+status: 3
+tags: []
+user_id: runner
