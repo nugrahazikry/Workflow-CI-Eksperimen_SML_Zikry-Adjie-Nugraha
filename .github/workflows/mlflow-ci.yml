@@ -60,7 +60,8 @@ jobs:
         shell: bash -l {0}
         working-directory: MLProject
         run: |
-          mlflow models build-docker -m "runs:/${{ steps.capture_run_id.outputs.run_id }}/model" -n "${{ secrets.DOCKERHUB_USERNAME }}/telco-churn-model"
+          mlflow models build-docker -m "runs:/${{ steps.capture_run_id.outputs.run_id }}/model" -n "${{ secrets.DOCKERHUB_USERNAME }}/telco-churn-model" --env-manager conda
+
 
       - name: Push Docker image to Docker Hub
         run: docker push "${{ secrets.DOCKERHUB_USERNAME }}/telco-churn-model"
