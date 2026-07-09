@@ -30,7 +30,8 @@ jobs:
 
       - name: Install MLflow
         shell: bash -l {0}
-        run: pip install mlflow==2.19.0
+        run: pip install mlflow==2.19.0 pandas==2.2.3 numpy==2.2.1 scikit-learn==1.6.0
+
 
       - name: Run MLflow Project
         shell: bash -l {0}
@@ -60,7 +61,7 @@ jobs:
         shell: bash -l {0}
         working-directory: MLProject
         run: |
-          mlflow models build-docker -m "runs:/${{ steps.capture_run_id.outputs.run_id }}/model" -n "${{ secrets.DOCKERHUB_USERNAME }}/telco-churn-model" --env-manager conda
+          mlflow models build-docker -m "runs:/${{ steps.capture_run_id.outputs.run_id }}/model" -n "${{ secrets.DOCKERHUB_USERNAME }}/telco-churn-model" --env-manager local
 
 
       - name: Push Docker image to Docker Hub
