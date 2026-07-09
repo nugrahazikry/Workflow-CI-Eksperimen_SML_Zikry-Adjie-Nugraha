@@ -1,0 +1,16 @@
+# Secrets — JANGAN pernah commit
+.env
+*.env
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+
+# MLflow local tracking artifacts
+mlruns/
+mlartifacts/
+
+# OS
+.DS_Store
+Thumbs.db

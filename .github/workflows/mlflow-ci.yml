@@ -1,0 +1,38 @@
+name: MLflow Project CI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "MLProject/**"
+  workflow_dispatch:
+
+concurrency:
+  group: mlflow-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  train:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Miniconda
+        uses: conda-incubator/setup-miniconda@v3
+        with:
+          python-version: "3.12.7"
+          activate-environment: mlflow-ci-env
+
+      - name: Install MLflow
+        shell: bash -l {0}
+        run: pip install mlflow==2.19.0
+
+      - name: Run MLflow Project
+        shell: bash -l {0}
+        working-directory: MLProject
+        run: mlflow run . --env-manager=conda
