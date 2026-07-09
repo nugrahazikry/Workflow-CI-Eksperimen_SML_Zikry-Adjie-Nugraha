@@ -27,7 +27,8 @@ y = y.reshape(len(y),)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random_state=42)
 
 #Define & train model
-with mlflow.start_run(run_name="ci_retrain"):
+with mlflow.start_run():
+
     model = RandomForestClassifier(random_state=42)
     model.fit(X_train, y_train)
 
