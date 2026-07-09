@@ -1,0 +1,15 @@
+artifact_uri: file:///home/runner/work/Workflow-CI-Eksperimen_SML_Zikry-Adjie-Nugraha/Workflow-CI-Eksperimen_SML_Zikry-Adjie-Nugraha/MLProject/mlruns/933412496390656246/7bca5aa7dfce4b6eb15752b794fd70da/artifacts
+end_time: 1783583095980
+entry_point_name: ''
+experiment_id: '933412496390656246'
+lifecycle_stage: active
+run_id: 7bca5aa7dfce4b6eb15752b794fd70da
+run_name: omniscient-cat-181
+run_uuid: 7bca5aa7dfce4b6eb15752b794fd70da
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783583053791
+status: 3
+tags: []
+user_id: runner

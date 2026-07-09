@@ -1,0 +1,15 @@
+artifact_uri: file:///home/runner/work/Workflow-CI-Eksperimen_SML_Zikry-Adjie-Nugraha/Workflow-CI-Eksperimen_SML_Zikry-Adjie-Nugraha/MLProject/mlruns/933412496390656246/c830653a9d704e1dbb7e1cdf8b9c483c/artifacts
+end_time: 1783583108483
+entry_point_name: ''
+experiment_id: '933412496390656246'
+lifecycle_stage: active
+run_id: c830653a9d704e1dbb7e1cdf8b9c483c
+run_name: carefree-elk-58
+run_uuid: c830653a9d704e1dbb7e1cdf8b9c483c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783583099091
+status: 3
+tags: []
+user_id: runner
